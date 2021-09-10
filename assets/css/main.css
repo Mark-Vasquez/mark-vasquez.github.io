@@ -2670,7 +2670,20 @@ input[type="radio"] + label:before {
 	color: #953d75;
 }
 
+.resume {
+	font-size: 35px;
+}
+
 /* Image */
+
+.profile-image img {
+	border-radius: 0.25em;
+	border: 0;
+	display: inline-block;
+	position: relative;
+	width: 30px;
+	height: 30px;
+}
 
 .image {
 	border-radius: 0.25em;
