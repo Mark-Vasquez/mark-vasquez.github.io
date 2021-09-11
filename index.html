@@ -7,7 +7,7 @@
 <html>
 
 <head>
-  <title>Hyperspace by HTML5 UP</title>
+  <title>Mark V Portfolio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -27,7 +27,7 @@
           <li><a href="#one">Projects</a></li>
           <li><a href="#two">Skills</a></li>
           <li><a href="#two-and-half">About Me</a></li>
-          <li><a href="#three">Get in touch</a></li>
+          <li><a href="#three">Contacts</a></li>
         </ul>
       </nav>
     </div>
@@ -45,52 +45,109 @@
             href="./assets/Vasquez_Mark_Resume.pdf">Resume</a>
         </p>
         <ul class="actions">
-          <li><a href="#one" class="button scrolly">Learn more</a></li>
+          <li><a href="#one" class="button scrolly">Projects</a></li>
         </ul>
       </div>
     </section>
 
     <!-- One -->
     <section id="one" class="wrapper style2 spotlights">
-      <section>
-        <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-        <div class="content">
-          <div class="inner">
-            <h2>Sed ipsum dolor</h2>
-            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
-              quis. Aliquam dapibus.</p>
-            <ul class="actions">
-              <li><a href="generic.html" class="button">Learn more</a></li>
-            </ul>
+
+      <section class="project-section">
+        <div class="project-container" class="content">
+          <div class="inner project_text">
+            <h2>Foodlewd</h2>
+            <p>Foodlewd is a fullstack app created to connect foodlovers through photography and interactivity. Users
+              can upload their
+              photos to be commented on by others. The pictures as well as comments can be deleted in case a user
+              changes their mind.
+              Comments also be easily edited.</p>
+            <p>Incorporated user interaction with photos through comments by utilizing Redux state management and thunks
+              to make API
+              calls that retrieve and store comments in the PostgreSQL database
+
+              Stored user images by implementing AWS S3 object containers which enabled users to save and retrieve
+              images from the
+              cloud services
+
+              Utilized a wide variety of CSS3 web layout rules, including Flexbox, to make a dark theme look-alike of
+              the real
+              Instagram website</p>
+            <span>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/Mark-Vasquez/food-lewd">Repo</a>
+              <span>|</span>
+              <a target="_blank" rel="noopener noreferrer" href="https://food-lewd.herokuapp.com/">Live Site</a>
+            </span>
           </div>
         </div>
-      </section>
-      <section>
-        <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-        <div class="content">
-          <div class="inner">
-            <h2>Feugiat consequat</h2>
-            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
-              quis. Aliquam dapibus.</p>
-            <ul class="actions">
-              <li><a href="generic.html" class="button">Learn more</a></li>
-            </ul>
-          </div>
+        <div class="project-image-wrap">
+          <img class="project-images" src="./images/foodlewd.png" alt="" data-position="center center" />
+          <img class="project-images" src="./images/foodlewd2.png" alt="" data-position="center center" />
+          <img class="project-images" src="./images/foodlewd3.png" alt="" data-position="center center" />
         </div>
       </section>
-      <section>
-        <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-        <div class="content">
-          <div class="inner">
-            <h2>Ultricies aliquam</h2>
-            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
-              quis. Aliquam dapibus.</p>
-            <ul class="actions">
-              <li><a href="generic.html" class="button">Learn more</a></li>
-            </ul>
+
+      <section class="project-section">
+        <div class="project-container" class="content">
+          <div class="inner project_text">
+            <h2>ForMe</h2>
+            <p>Constructed a frontend engine to implement a JSXFields library, created by another team member, which
+              rendered different
+              form types and settings for field inputs based on user selection</p>
+            <p>Leveraged local state within a component by importing React useState hooks which allowed three separate
+              settings tabs
+              within the form-builder for intuitive user customization
+
+              Ensured app responsiveness and styling with React and CSS modules within the components to render a
+              preview of the
+              unique user-constructed forms</p>
+            <span>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/KagenLH/forme-app">Repo</a>
+              <span>|</span>
+              <a target="_blank" rel="noopener noreferrer" href="https://forme-live.herokuapp.com/">Live Site</a>
+            </span>
           </div>
         </div>
+        <div class="project-image-wrap">
+          <img class="project-images" src="./images/forme1.png" alt="" data-position="center center" />
+          <img class="project-images" src="./images/forme2.png" alt="" data-position="center center" />
+          <img class="project-images" src="./images/forme3.png" alt="" data-position="center center" />
+        </div>
       </section>
+
+      <section class="project-section">
+        <div class="project-container" class="content">
+          <div class="inner project_text">
+            <h2>Grumble</h2>
+            <p>Grumble, a Yelp clone, is a full-stack app to connect food lovers with the most hip local restaurants.
+              Grumble's
+              frontend is built on React with Redux to manage the application's state. Express framework is used to
+              serve the
+              frontend. PostgreSQL is used as the application's database.</p>
+            <p>Implemented Sequelize mapping to effortlessly create database tables in PostgreSQL and store user’s
+              business reviews and
+              ratings with the Sequelize create method.
+
+              Utilized React / Redux for the frontend by dispatching thunks to store resulting data in the global state,
+              displaying to
+              the user a snappy experience without full page re-renders</p>
+            <span>
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://github.com/Mark-Vasquez/Grumble-Project">Repo</a>
+              <span>|</span>
+              <a target="_blank" rel="noopener noreferrer" href="https://grumble-application.herokuapp.com/">Live
+                Site</a>
+            </span>
+          </div>
+        </div>
+        <div class="project-image-wrap">
+          <img class="project-images" src="./images/grumble1.png" alt="" data-position="center center" />
+          <img class="project-images" src="./images/grumble2.png" alt="" data-position="center center" />
+          <img class="project-images" src="./images/grumble3.png" alt="" data-position="center center" />
+        </div>
+      </section>
+
+
     </section>
 
     <!-- Two -->
@@ -183,63 +240,34 @@
     <!-- Three -->
     <section id="three" class="wrapper style1 fade-up">
       <div class="inner">
-        <h2>Get in touch</h2>
-        <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
-          quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis
-          lorem.</p>
-        <div class="split style1">
-          <section>
-            <form method="post" action="#">
-              <div class="fields">
-                <div class="field half">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" />
-                </div>
-                <div class="field half">
-                  <label for="email">Email</label>
-                  <input type="text" name="email" id="email" />
-                </div>
-                <div class="field">
-                  <label for="message">Message</label>
-                  <textarea name="message" id="message" rows="5"></textarea>
-                </div>
-              </div>
-              <ul class="actions">
-                <li><a href="" class="button submit">Send Message</a></li>
-              </ul>
-            </form>
-          </section>
-          <section>
-            <ul class="contact">
+        <h2>Contact Me</h2>
+        <p>markjasonvasquez1@gmail.com</p>
+        <h3>Social</h3>
+        <ul class="contact">
+          <li>
+            <ul class="icons">
               <li>
-                <h3>Address</h3>
-                <span>12345 Somewhere Road #654<br />
-                  Nashville, TN 00000-0000<br />
-                  USA</span>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Mark-Vasquez">
+                  <img class="contact_logo" src="./images/icons8-github-96.png" alt="github">
+                </a>
               </li>
               <li>
-                <h3>Email</h3>
-                <a href="#">user@untitled.tld</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mark-vasquez-439858212/">
+                  <img class="contact_logo" src="./images/icons8-linkedin-2-100.png" alt="linkedin">
+                </a>
               </li>
               <li>
-                <h3>Phone</h3>
-                <span>(000) 000-0000</span>
-              </li>
-              <li>
-                <h3>Social</h3>
-                <ul class="icons">
-                  <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                  <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                  <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                  <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                  <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                </ul>
+                <a target="_blank" rel="noopener noreferrer" href="https://angel.co/u/mark-vasquez-3">
+                  <img class="contact_logo" src="./images/icons8-angellist-150.png" alt="angel">
+                </a>
               </li>
             </ul>
-          </section>
-        </div>
+          </li>
+        </ul>
+
       </div>
-    </section>
+  </div>
+  </section>
 
   </div>
 

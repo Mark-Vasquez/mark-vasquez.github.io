@@ -2676,6 +2676,65 @@ input[type="radio"] + label:before {
 
 /* Image */
 
+.project-section {
+	min-height: 400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column !important;
+}
+
+.project-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 70px 0px 40px;
+	height: 100%;
+}
+
+.project_text {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start !important;
+}
+
+.inner p {
+	font-size: 16px;
+}
+
+.project-image-wrap {
+	width: 100%;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.project-image-wrap a {
+	border-bottom: none !important;
+	height: 100%;
+	width: 100%;
+}
+
+a.project-image-container {
+	height: 100% !important;
+	width: 100%;
+}
+
+.project-images {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.contact_logo {
+	height: 40px;
+	width: 40px;
+}
+
 .profile-image img {
 	border-radius: 0.25em;
 	border: 0;
@@ -3990,4 +4049,11 @@ body.is-preload #sidebar nav ul li {
 	#intro {
 		background-attachment: scroll;
 	}
+}
+
+.inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
